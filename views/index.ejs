@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="/assets/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+	<script src="/assets/todo.js" charset="utf-8"></script>
+	</head>
+<body>
+	<div class="container">
+		<input type="date" name="datepicker" id="datepicker" />
+		<div class="control">
+		<div class="title"> <h1>To Do List</h1></div>
+		<form method="post" action="/index">
+			<div class="outer">
+				<input type="text" class="text" class="form-control" name="item" required>
+				<button class="send" type="submit"><h3>Send<h3></button>
+		</div>
+		</form>
+
+	<div class="inner">
+
+		<ul  class="content">
+			<% for(var i=0;i<data.length;i++){%>
+
+			<li> <%=data[i].item%></li>
+		<%}%>
+		</ul>
+
+
+
+	</div>
+<div>
+	<div class="control">
+</div>
+</body>
+</html>

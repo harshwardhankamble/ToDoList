@@ -1,0 +1,117 @@
+body{
+    font-family: 'BioRhyme', serif;
+    height: 100%;
+    width: 100%;
+	background-image: linear-gradient(to right,#2f054e, #e01094);
+}
+.container{
+	position: relative;
+  margin:10%;
+  padding: 10;
+  display: flex;
+	align-content:center;
+  flex-direction: column;
+}
+.title{
+	left:12rem;
+	position: relative;
+	top:2px;
+	vertical-align: center;
+}
+.outer{
+
+}
+h3{
+	top: -8px;
+	left:30px;
+
+	font-family: 'Anton', sans-serif;
+	stretch:10px;
+	justify-content: center;
+	position: absolute;
+}
+.container #datepicker{
+	position: absolute;
+	top: 0px;
+	right: 400px;
+	margin: 2px;
+	padding: 2px;
+	border: 0px;
+	background-color: inherit;
+	outline: none;
+	font-size: 1rem;
+	font-family: inherit;
+}
+.text{
+	position: absolute;
+	height: 40px;
+	top: 5rem;
+	outline: none;
+	width: 25rem;
+	font-family: inherit;
+	border-radius: 5rem;
+	background-color: #dde3f0;
+}
+.send{
+	position: absolute;
+	left: 26rem;
+	background-color: #5579c7;
+	top: 5rem;;
+	width: 6rem;
+	height: 40px;
+	border-radius: 5rem;
+	outline: none;
+	border-bottom: 1px solid #fabd6d;
+	box-shadow: 2px green;
+	outline: none;
+}
+.send:hover{
+	color: black;
+	transform: translateX(-5px);
+}
+.content{
+	position: absolute;
+	top: 9rem;
+	width: 27rem;
+	border-radius: 0rem;
+	border-style: none;
+	max-height: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+	background-color: gray;
+  list-style: none;
+}
+.content li{
+  padding: 10px 10px;
+  background-color: #EEEEEE;
+  border: 2px solid gray;
+}
+.content li:hover{
+  text-decoration: line-through;
+}
+.clear{
+	position: relative;
+	cursor: pointer;
+  left: 25rem;
+  bottom: 0.5rem;
+	border-radius: 80px;
+	box-shadow: 0px 4px 12px rgba(136,18,56,0.56);
+}
+.clear:hover{
+	background: #ee4550;
+	border-radius: 80px;
+	box-shadow: 0px 4px 12px rgba(136,18,56,0.15);
+}
+.clear svg{
+	position: absolute;
+	display: block;
+	transform-origin: center center;
+	transform: translate(-50%,-50%);
+	transition: 200ms ease;
+}
+.clear:hover svg{
+	transform: translate(-50%,-50%) rotate(180deg);
+}
+.clear:hover path{
+	stroke:#hhhhhh;
+}
